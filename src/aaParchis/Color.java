@@ -5,34 +5,43 @@ public class Color {
 
 
 
-	private final int CASILLALIMITE;
+	private int casillaLimite;
 	
-	private String Color;
+	private String color;
 	
 
 
-	public Color(int cASILLALIMITE, String color) {
+	public Color(int casillaLimite, String color) {
 		super();
-		CASILLALIMITE = cASILLALIMITE;
-		Color = color;
+		casillaLimite = casillaLimite;
+		color = color;
 	}
 
 
 
+	protected int getCasillaLimite() {
+		return casillaLimite;
+	}
+
+
+
+	protected void setCasillaLimite(int casillaLimite) {
+		this.casillaLimite = casillaLimite;
+	}
 
 
 
 	protected String getColor() {
-		return Color;
+		return color;
 	}
+
+
 
 	protected void setColor(String color) {
-		Color = color;
+		this.color = color;
 	}
 
-	protected int getCASILLALIMITE() {
-		return CASILLALIMITE;
-	}
+
 
 
 }
